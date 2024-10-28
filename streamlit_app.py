@@ -34,8 +34,10 @@ PHOENIX_API_KEY = st.secrets["PHOENIX_API_KEY"]
 OTEL_EXPORTER_OTLP_HEADERS = st.secrets["OTEL_EXPORTER_OTLP_HEADERS"]
 PHOENIX_CLIENT_HEADERS = st.secrets["PHOENIX_CLIENT_HEADERS"]
 PHOENIX_COLLECTOR_ENDPOINT = st.secrets["PHOENIX_COLLECTOR_ENDPOINT"]
-llama_index.core.set_global_handler( #"arize_phoenix",
-    project_name="llamaindex-workflow-pinecone-observability", endpoint="https://llamatrace.com/v1/traces"
+llama_index.core.set_global_handler(
+    "arize_phoenix",
+    #project_name="llamaindex-workflow-pinecone-observability", 
+    endpoint="https://llamatrace.com/v1/traces"
 )
 
 # DEFINE EVENTS FOR WORKFLOW
