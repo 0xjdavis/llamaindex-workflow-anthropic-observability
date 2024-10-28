@@ -10,9 +10,7 @@ llama_index.vector_stores.pinecone
 llama_index.llms.anthropic
 llama_index.llms.openai
 # EMBEDDINGS
-#llama_index.embeddings.huggingface
 llama_index.embeddings.openai
-#llama_index.embeddings.base
 # WORKFLOW
 llama-index-utils-workflow
 
